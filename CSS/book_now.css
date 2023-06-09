@@ -1,5 +1,6 @@
 /*Google Fonts - Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("navbar.css");
 
 *{
     font-family: 'Poppins',sans-serif;
@@ -13,19 +14,21 @@ body{
     display: flex;
     align-items:center;
     justify-content: center;
-    padding: 0 20px;
+    flex-direction: column;
     background-color:#c3d3f8;
+    margin: 0px;
 }
 
 .container{
     position: relative;
-    margin-top: 70px;
+    margin-top: 100px;
+    margin-bottom: 70px;
     max-width: 700px;
     width: 100%;
     padding: 45px;
     background: white;
     border-radius: 8px;
-    border-radius: 0 0 15 px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15 px rgba(0,0,0,0.1);
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -41,10 +44,13 @@ body{
   }
 
 .container header{
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: 500;
-    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .container .form{
@@ -67,11 +73,11 @@ body{
     outline: none;
     font-size: 1rem;
     color: #707070;
-    font-style: italic;
+    background-color: #eee;
     margin-top: 8px;
     border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
+    border-radius: 2px;
+    padding: 12px 15px;
 }
 
 .form .column{
@@ -99,29 +105,46 @@ body{
     outline: none;
     font-size: 1rem;
     color: #707070;
-    font-style: italic;
+    background-color: #eee;
     margin-top: 8px;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 2px;
     padding: 0 15px;
 }
-.form button{
-    height: 55px;
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    margin-top: 30px;
-    cursor: pointer;
-    border-radius: 6px;
-    border: none;
-    font-weight: 400; 
-    transition: all 0.2s ease;
-    background-color:#c3d3f8;
+
+#venue, #contact, #events, #time{
+        font-size: 12px;
 }
 
-.form button:hover{
-    background-color:#5673ae;
+.form button{
+    border-radius: 2px;
+	border: 1px solid #5673ae;
+	background-color: #5673ae;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+    margin-top: 20px;
+    width: 170px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    cursor: pointer;
+    width: 100%;
 }
+
+.form button:active{
+    transform: scale(0.95);
+}
+
+.form button:focus {
+	outline: #fff;  
+}
+
+::placeholder {
+    font-size: 12px;
+}
+  
 
 
 

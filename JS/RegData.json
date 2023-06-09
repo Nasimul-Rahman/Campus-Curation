@@ -1,0 +1,20 @@
+{
+  "formFields": [
+    {
+      "name": "name",
+      "value": ""
+    },
+    {
+      "name": "email",
+      "value": ""
+    },
+    {
+      "name": "password",
+      "value": ""
+    },
+    {
+      "name": "confirmPassword",
+      "value": ""
+    }
+  ]
+}

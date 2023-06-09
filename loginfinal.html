@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Login & Sign Up</title>
+       <link rel="stylesheet" href="CSS/loginfinal.css">
+       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+       <script src="JS/loginfinal.js" defer></script>
+
+       <style>
+        .error {
+            color: red;
+        }
+
+        ::placeholder {
+            font-size: 12px;
+        }
+    </style>
+    
+    <script src="JS/RegData.json"></script>
+    
+    <script>
+    console.log(data); // Access the JSON data
+    </script>
+
+    </head>
+    <body>
+        <input type="checkbox" id="click">
+    <div class="main-container">
+        <div class="form-container">
+            
+            <div class="sign-in">
+                <form action="index.html">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" id="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+                    <span id="emailError" class="error"></span><br>
+                    <input type="password" id="password" placeholder="Password" pattern=".{6,}" required />
+                    <span id="passwordError" class="error"></span><br>
+                    <a href="#" class="fogot-pass">Forgot your password?</a>
+                    <button>Log In</button>
+                </form>
+            </div>
+            <div class="sign-up">
+                <form action="loginfinal.html">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" id="name" placeholder="Name" pattern="^[A-Za-z\s]+$" required />
+                    <span id="nameError" class="error"></span><br>
+                    <input type="email" id="email" placeholder="Email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
+                    <span id="emailError" class="error"></span><br>
+                    <input type="password" id="password" placeholder="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" required />
+                    <span id="passwordError" class="error"></span><br>
+                    <input type="password" id="confirmPassword" placeholder="Re-enter password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" required />
+                    <button>Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide-panel">
+                <div class="slide-left">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <label for="click" class="slide">Sign Up</label>   
+                </div>
+                <div class="slide-right">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <label for="click" class="slide">Sign In</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

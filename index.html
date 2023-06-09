@@ -2,23 +2,32 @@
 <html>
     <head>
         <title>Campus Curation</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?
         family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
 
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/
         dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="JS/homepage.js" defer></script>
     </head>
     <body>
+        <section class="common_nav">
+            <a href="index.html"><img src="CSS/Assets/Heading-removebg-preview.png" class="logo"></a>
+            <div class="common_nav_right">
+                <a href="profile.html"><img src="CSS/Assets/user.png" class="profile"></a>
+                <div id="menuButton">
+                    <img src="CSS/Assets/menu.png" id="menu">
+                </div>
+            </div>
+        </section>
         <section id = "banner">
-            <img src="Heading-removebg-preview.png" class="logo">
             <div class = "banner-text">
                 <h1>Campus Curation</h1>
                 <p>Unleashing the Extraordinary: Your Ultimate Student Life Experience!</p>
                 <div class="banner-btn">
-                    <a href="#"><span></span>Find Out</a>
-                    <a href="book_now.html"><span></span>Book Now</a>
+                    <a href="#"><span></span>FIND OUT</a>
+                    <a href="book_now.html"><span></span>BOOK CONSULTATION</a>
                 </div>
             </div>
         </section>
@@ -30,12 +39,13 @@
                     <li><a href="#feature">FEATURES</a></li>
                     <li><a href="#service">SERVICES</a></li>
                     <li><a href="#testimonial">TESTIMONIALS</a></li>
-                    <li><a href="#footer">MEET US</a></li>
+                    <li><a href="Enquirypage.html">ENQUIRY</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
                 </ul>
             </nav>
         </div>
         <div id="menuButton">
-            <img src="menu.png" id="menu">
+            <img src="CSS/Assets/menu.png" id="menu">
         </div>
 
         <!-----Features----->
@@ -58,7 +68,7 @@
                 </div>
 
                 <div class="features-img">
-                    <img src="pic1.jpg">
+                    <img src="CSS/Assets/pic1.jpg">
                 </div>
             </div>
         </section>
@@ -67,11 +77,11 @@
 
         <section id="service">
             <div class="title-text">
-                <h1>What We Offer</h1>
+                <h1>Our Past Events</h1>
             </div>
             <div class="service-box">
                 <div class="single-service">
-                    <img src="grad.jpg">
+                    <img src="CSS/Assets/grad.jpg">
                     <div class="overlay"></div>
                     <div class="service-desc">
                         <h3>Graduation</h3>
@@ -81,7 +91,7 @@
                 </div>
 
                 <div class="single-service">
-                    <img src="tournament.webp">
+                    <img src="CSS/Assets/tournament.webp">
                     <div class="overlay"></div>
                     <div class="service-desc">
                         <h3>Tournaments</h3>
@@ -91,7 +101,7 @@
                 </div>
 
                 <div class="single-service">
-                    <img src="prom.jpg">
+                    <img src="CSS/Assets/prom.jpg">
                     <div class="overlay"></div>
                     <div class="service-desc">
                         <h3>Prom</h3>
@@ -101,7 +111,7 @@
                 </div>
 
                 <div class="single-service">
-                    <img src="mun.jpg">
+                    <img src="CSS/Assets/mun.jpg">
                     <div class="overlay"></div>
                     <div class="service-desc">
                         <h3>Model United Nations(MUN)</h3>
@@ -109,6 +119,9 @@
                         <p>This is the description</p>
                     </div>
                 </div>
+            </div>
+            <div class="read-more-button">
+                <a href="services.html"><button>Read More</button></a>
             </div>
         </section>
 
@@ -120,7 +133,7 @@
             <div class="testimonial-row">
                 <div class="testimonial-col">
                     <div class="user">
-                        <img src="photo1.jpg">
+                        <img src="CSS/Assets/photo1.jpg">
                         <div class="user-info">
                             <h4>WILLIAM PETERSON<i class="fa fa-twitter"></i></h4>
                             <small>@williampeterson</small>
@@ -130,7 +143,7 @@
                 </div>
                 <div class="testimonial-col">
                     <div class="user">
-                        <img src="photo2.jpg">
+                        <img src="CSS/Assets/photo2.jpg">
                         <div class="user-info">
                             <h4>BLAKE JOHNSON<i class="fa fa-twitter"></i></h4>
                             <small>@blake.johnson</small>
@@ -140,7 +153,7 @@
                 </div>
                 <div class="testimonial-col">
                     <div class="user">
-                        <img src="photo3.jpg">
+                        <img src="CSS/Assets/photo3.jpg">
                         <div class="user-info">
                             <h4>STACY LAMBERT<i class="fa fa-twitter"></i></h4>
                             <small>@stacy_lambert001</small>
@@ -177,33 +190,6 @@
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-youtube-play"></i>
             </div>
-            
         </section>
-
-
-
-
-        <script>
-            var menuButton = document.getElementById("menuButton")
-            var sideNav = document.getElementById("sideNav")
-            var menu = document.getElementById("menu")
-
-            sideNav.style.right = "-250px";
-
-            menuButton.onclick = function(){
-                if(sideNav.style.right == "-250px"){
-                    sideNav.style.right = "0";
-                }
-                else{
-                    sideNav.style.right = "-250px";
-                }
-            }
-
-            var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000,
-	speedAsDuration: true
-});
-
-        </script>
     </body>
 </html>

@@ -1,0 +1,60 @@
+{
+    "types_of_events": [
+        "Academic Awards Nights",
+        "Alumni Networking Events",
+        "Art Competition and Exhibitions",
+        "Career Fairs",
+        "Charity Galas and Fundraising Dinners",
+        "Cultural Fests",
+        "Creative Writing Workshops",
+        "Film Festival",
+        "Gaming Tournaments",
+        "Graduation Ceremonies",
+        "Hackathons",
+        "Homecoming",
+        "Internship and Job Expos",
+        "Model United Nations (MUN) Conferences",
+        "Music Concerts and Battle of the Bands",
+        "Orientation Week",
+        "Outdoor Adventures and Sports Tournaments",
+        "Photography Contests and Exhibitions",
+        "Prom",
+        "Study Abroad Fairs"
+    ],
+    "how_can_we_help": [
+        ["Venue Rental", "check-venue_rental", "venue_rental"],
+        ["Event Planning and Coordination", "check-event_planning", "event_planning"],
+        ["Essential Event Furniture", "check-event_furniture", "event_furniture"],
+        ["Catering", "check-catering", "catering"],
+        ["Audio/Visual Equipment Rental", "check-audio", "audio"],
+        ["Decorations and Theme Design", "check-deco", "deco"],
+        ["Event Marketing and Promotion", "check-marketing", "registration"],
+        ["Ticketing and Registration", "check-registration", "registration"],
+        ["Event Security", "check-security", "security"],
+        ["Event Photography and Videography", "check-photo_video", "photo_video"],
+        ["Transportation and Logistics", "check-transport", "transport"],
+        ["Entertainment", "check-entertainment", "entertainment"],
+        ["Event Staffing", "check-staffing", "staffing"],
+        ["Event Signage and Printing", "check-printing", "printing"],
+        ["Event Branding and Graphic Design", "check-branding", "branding"],
+        ["Health and Safety Services", "check-safety", "safety"]
+    ],
+    "how_can_we_reach_you": [
+        ["Online Video conferencing - Zoom/Google Meet/Other", "online_video"],
+        ["Over the phone", "phone"],
+        ["Personal Meeting", "meeting"],
+        ["Email", "email_option"]
+    ],
+    "venue_type": [
+        ["Help me with the venue", "venue_selection"],
+        ["Indoor halls-Ballroom/Banquet halls", ""],
+        ["Outdoor venue - Villa/Garden/Resorts/Open-air", "indoor"],
+        ["Others", "email_option"]
+    ],
+    "best_time": [
+        ["Sun to Wed(9:00 AM to 12:00 PM)", "900"],
+        ["Sun to Wed(2:00 PM to 6:00 PM)", "200"],
+        ["Thurs/Sat(10:00 AM to 3:00 PM)", "thurs_sat"],
+        ["Fri (4:00 PM to 6:00 PM)", "fri"]
+    ]
+}

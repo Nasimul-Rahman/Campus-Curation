@@ -1,0 +1,73 @@
+/* Footer CSS */
+
+#footer{
+    margin-top: 50px;
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+    width: 100%;
+  }
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text h1 {
+    font-size: 50px;
+}
+  
+  .footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-right{
+    text-align: right;
+  }
+  
+  .footer-row h1{
+    margin: 10px 0;
+  }
+  
+  .footer-row p{
+    margin: 0px;
+    line-height: 35px;
+  }
+  
+  .footer-left .fa, .footer-right .fa{
+    font-size: 20px;
+    color:#9bafd9;
+    margin: 10px;
+  }
+  
+  .social-links{
+    text-align: center;
+  }
+  
+  .social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #9bafd9;
+    margin: 40px 5px 0;
+    color: #9bafd9;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  .social-links .fa:hover{
+    background: #9bafd9;
+    color: #fff;
+    transform: translateY(-7px);
+  }

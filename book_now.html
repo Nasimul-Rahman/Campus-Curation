@@ -1,60 +1,62 @@
 <html>
     <head>
-        <title>Registration Form</title>
-        <link rel="stylesheet" href="book_now.css">
+        <title>Schedule an Appointment</title>
+        <link rel="stylesheet" href="CSS/book_now.css">
         <link rel="stylesheet" href="./build/css/intlTelInput.css">
         <link rel="stylesheet" href="./build/css/demo.css">
         <link href="https://fonts.googleapis.com/css?
         family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+        <script src="JS/book_now.js"></script>
+        <script src="JS/homepage.js" defer></script>
     </head>
     <body>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#banner">HOME</a></li>
+                    <li><a href="#feature">FEATURES</a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#testimonial">TESTIMONIALS</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="common_nav">
+            <a href="index.html"><img src="CSS/Assets/Heading-removebg-preview.png" class="logo"></a>
+            <div class="common_nav_right">
+                <a href="profile.html"><img src="CSS/Assets/user.png" class="profile"></a>
+                <div id="menuButton">
+                    <img src="CSS/Assets/menu.png" id="menu">
+                </div>
+            </div>
+        </section>
         <section class="container">
             <header>Schedule an Appointment</header>
-            <form action="#" class="form">
+            <form action="consultationConfirmed.html" class="form">
                 <div class="input-box">
                     <label>Full Name</label> <!---Get it from the log in or sign up details-->
-                    <input type="text" placeholder="Enter your name" required/> 
+                    <input type="text" placeholder="Enter your name" title="Please use appropriate characters" pattern="^[A-Za-z\s]+$" required/> 
                 </div>
 
                 <div class="input-box">
                     <label>University/School Name</label> 
-                    <input type="text" placeholder="Enter university or school name" required/>
+                    <input type="text" placeholder="Enter university or school name" pattern="^[A-Za-z\s]+$" required/>
                 </div>
 
                 <div class="input-box">
                     <label>Email Address</label> 
-                    <input type="text" placeholder="Enter email address" required/> 
+                    <input type="text" placeholder="Enter email address" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/> 
                 </div>
 
                 <div class="input-box">
                     <label>Phone</label> 
-                    <input type="tel" id="phone" placeholder="Enter phone number" required/> <!--Add Country Code-->
+                    <input type="tel" id="phone" placeholder="Enter phone number" title="+97105XXXXXXXX" pattern="\+97105[0-9]{8}"required/>
                 </div>
 
                 <div class="input-box">
                     <label>Type of Event</label> 
                     <select id = "events" name="events" required>
                         <option value="">Select from the list</option>
-                        <option value="">Academic Awards Nights</option>
-                        <option value="">Alumni Networking Events</option>
-                        <option value="">Art Competition and Exhibitions</option>
-                        <option value="">Career Fairs</option>
-                        <option value="">Charity Galas and Fundraising Dinners</option>
-                        <option value="">Cultural Fests</option>
-                        <option value="">Creative Writing Workshops</option>
-                        <option value="">Film Festival</option>
-                        <option value="">Gaming Tournaments</option>
-                        <option value="">Graduation Ceremonies</option>
-                        <option value="">Hackathons</option>
-                        <option value="">Homecoming</option>
-                        <option value="">Internship and Job Expos</option>
-                        <option value="">Model United Nations (MUN) Conferences</option>
-                        <option value="">Music Concerts and Battle of the Bands</option>
-                        <option value="">Orientation Week</option>
-                        <option value="">Outdoor Adventures and Sports Tournaments</option>
-                        <option value="">Photography Contests and Exhibitions</option>
-                        <option value="">Prom</option>
-                        <option value="">Study Abroad Fairs</option>
                     </select>
                 </div>
 
@@ -62,80 +64,12 @@
                     <label>When is the best time to reach you?</label> 
                     <select id = "time" name="time" required>
                         <option value="time">Select your convienient time</option>
-                        <option value="900">Sun to Wed(9:00 AM to 12:00 PM)</option>
-                        <option value="200">Sun to Wed(2:00 PM to 6:00 PM)</option>
-                        <option value="thurs_sat">Thurs/Sat(10:00 AM to 3:00 PM)</option>
-                        <option value="fri">Fri (4:00 PM to 6:00 PM)</option>
                     </select>
                 </div>
 
                 <div class="selection-box">
                     <h3>How can we help?</h3>
                     <div class="selection-option">
-                        <div class="selection">
-                            <input type="radio" id="check-venue_rental" name="venue_rental"/>
-                            <label for="check-venue_rental">Venue Rental</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-event_planning" name="event_planning"/>
-                            <label for="check-event_planning">Event Planning and Coordination</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-event_furniture" name="event_furniture"/>
-                            <label for="check-event_furniture">Essential Event Furniture</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-catering" name="catering"/>
-                            <label for="check-catering">Catering</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-audio" name="audio"/>
-                            <label for="check-audio">Audio/Visual Equipment Rental</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-deco" name="deco"/>
-                            <label for="check-deco">Decorations and Theme Design</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-marketing" name="marketing"/>
-                            <label for="check-marketing">Event Marketing and Promotion</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-registration" name="registration"/>
-                            <label for="check-registration">Ticketing and Registration</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-security" name="security"/>
-                            <label for="check-security">Event Security</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-photo_video" name="photo_video"/>
-                            <label for="check-photo_video">Event Photography and Videography</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-transport" name="transport"/>
-                            <label for="check-transport">Transportation and Logistics</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-entertainment" name="entertainment"/>
-                            <label for="check-entertainment">Entertainment</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-staffing" name="staffing"/>
-                            <label for="check-staffing">Event Staffing</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-printing" name="printing"/>
-                            <label for="check-printing">Event Signage and Printing</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-branding" name="branding"/>
-                            <label for="check-branding">Event Branding and Graphic Design</label>
-                        </div><br>
-                        <div class="selection">
-                            <input type="radio" id="check-safety" name="safety"/>
-                            <label for="check-safety">Health and Safety Services</label>
-                        </div><br>
                     </div>
                 </div>
 
@@ -143,26 +77,18 @@
                     <label>How can we reach you?</label> 
                     <select id = "contact" name="contact_us" required>
                         <option value="select-option">Please select any one option</option>
-                        <option value="online_video">Online Video conferencing - Zoom/Google Meet/Other</option>
-                        <option value="phone">Over the  phone</option>
-                        <option value="meeting">Personal Meeting</option>
-                        <option value="email_option">Email</option>
                     </select>
                 </div>
 
                 <div class="input-box">
                     <label>Event Date</label> 
-                    <input type="date" placeholder="Select event date" required/>
+                    <input type="date" placeholder="Select event date" style="font-size: 12px;" required/>
                 </div>
 
                 <div class="input-box">
                     <label>Venue Type</label> 
                     <select id = "venue" name="venue_rental" required>
                         <option value="select-option">Please select venue type</option>
-                        <option value="venue_selection">Help me with the venue</option>
-                        <option value="indoor">Indoor halls-Ballroom/Banquet halls</option>
-                        <option value="outdoor">Outdoor venue - Villa/Garden/Resorts/Open-air</option>
-                        <option value="email_option">Others</option>
                     </select>
                 </div>
 

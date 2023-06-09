@@ -1,0 +1,185 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url("navbar.css");
+@import url("contact_us.css");
+
+* {
+  font-family: 'Poppins',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #c3d3f8;
+  margin: 0px;
+}
+
+header {
+  margin-top: 80px;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 60px;
+}
+.services {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  width: 70%;
+  max-width: 1000px;
+  margin: 50px 10px 10px;
+  height: 80vh;
+}
+
+.service_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service_container_text h3 {
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.service_container_text h3 span {
+  font-weight: bold;
+}
+
+.service_container_text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services{
+  align-items: center;
+}
+
+.services .plan {
+  margin: 0;
+  width: 25%;
+  position: relative;
+  float: left;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.services .plan:hover i,
+.services .plan.hover i {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.services * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.services header {
+  position: relative;
+  padding: 20px 10px;
+}
+.services header i {
+  font-size: 56px;
+  margin: 0 15px;
+  color: #5673ae;
+  display: inline-block;
+}
+.services .plan-title {
+  top: 0;
+  font-weight: 800;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services .plan-cost {
+  margin: 0;
+  opacity: 0.2;
+}
+.services .plan-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+.services .plan-type {
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+.services .plan-features {
+  padding: 0;
+  margin: 0 0 40px;
+  text-align: center;
+  list-style: outside none none;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.services .plan-features li {
+  padding: 5px 5%;
+  font-weight: 500;
+  opacity: 0.5;
+  border-left: 5px solid #5673ae;
+  margin: 2px 20px;
+}
+.services .plan-select {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.services .plan-select a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 20px;
+  border-radius: 40px;
+  font-size: 0.75em;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #5673ae;
+}
+.services .plan-select a:hover {
+  background-color: #24365b;
+}
+.services .featured {
+  margin-top: -10px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.services .featured .plan-select a {
+  margin: 30px 20px;
+}
+
+button {
+	border-radius: 2px;
+	border: 1px solid #5673ae;
+	background-color: #5673ae;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+  margin-top: 4px;
+  width: 100%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: #fff;  
+}
+
+

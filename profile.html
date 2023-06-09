@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="CSS/profile.css">
+    
+    <!-- Local JavaScript -->
+    <script src="JS/homepage.js" defer></script>
+
+    <!-- Fontawesome Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="center_container">
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#banner">HOME</a></li>
+                    <li><a href="#feature">FEATURES</a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#testimonial">TESTIMONIALS</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="common_nav">
+            <a href="index.html"><img src="CSS/Assets/Heading-removebg-preview.png" class="logo"></a>
+            <div class="common_nav_right">
+                <a href="profile.html"><img src="CSS/Assets/user.png" class="profile"></a>
+                <div id="menuButton">
+                    <img src="CSS/Assets/menu.png" id="menu">
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="prof_nav">
+                <div class="profile_pic">
+                    <img src="CSS/Assets/avatar.png" alt="profile picture">
+                </div>
+                <h2>Nasimul</h2>
+                <button class="alt_btn" onclick="location.href = 'loginfinal.html'">log out</button>
+            </section>
+            <section class="prof_detail">
+                <div class="prof_detail_text_container">
+                    <h2>Account Overview</h2>
+                    <h3>Profile</h3>
+                    <div class="profile_info">
+                        <div class="profile_info_element">
+                            <strong>Username:</strong>
+                            <p id="user_username">Nasimul</p>
+                        </div>
+                        <div class="profile_info_element">
+                            <strong>Email:</strong>
+                            <p id="user_email">nasimulrahman@gmail.com</p>
+                        </div>
+                        <button>Edit</button>
+                    </div>
+                    <h3>Orders</h3>
+                    <div class="orders_container">
+                        <p>No orders yet</p>
+                    </div>
+                    <h3>Reset Password</h3>
+                    <button>Reset</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <section id="footer">
+        <div class="title-text">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o"></i>Monday to Friday - 9 am to 9 pm</p>
+                <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 8 am to 11 pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>#23 abc Colony, xyz City AE<i class="fa fa-map-marker"></i></p>
+                <p>example@website.com<i class="fa fa-paper-plane"></i></p>
+                <p>+971 12 345 6789<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube-play"></i>
+        </div>
+    </section>
+</body>
+</html>

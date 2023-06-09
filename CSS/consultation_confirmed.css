@@ -1,0 +1,60 @@
+@import url("navbar.css");
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+body {
+    margin: 0px;
+    background-color: #c3d3f8;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+
+.container img {
+    width: 300px;
+}
+
+button {
+	border-radius: 2px;
+	border: 1px solid #5673ae;
+	background-color: #5673ae;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+    margin-top: 4px;
+    width: 300px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: #fff;  
+}
